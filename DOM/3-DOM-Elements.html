@@ -1,0 +1,40 @@
+
+<!-- 
+In HTML DOM elements are objects. These elements have methods and properties.
+Methods are the actions that can be performed on the HTML elements.
+Properties are the values that can be set.
+
+HTML DOM can be accessed with javascript.
+DOM elements can be access by
+1.Id
+2.TagName
+3.ClassName
+4.CSS Selector
+5.HTML Object Collection
+-->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1> DOM - Object methods and properties</h1>
+    <p id="para1">we will work with dom methods and properties</p>
+    <p id="para2" class="para2Class"> working with DOM elements</p>
+
+<script>
+    //access elements by ID
+    var accessById = document.getElementById('para1');
+    console.log(accessById);
+
+    //access elements by tag name
+    var accessByTagName = document.getElementsByTagName('p');
+    console.log(accessByTagName);
+
+    //access elements by class name
+    var accessByClassName = document.getElementsByClassName('para2Class');
+    console.log(accessByClassName);
+
+</script>
+
+</body>
+</html>
