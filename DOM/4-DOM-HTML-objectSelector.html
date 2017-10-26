@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
 <body>
-    <h1> DOM - Object methods and properties</h1>
-    <p id="para1">we will work with dom methods and properties</p>
-    <p id="para2" class="para2Class"> working with DOM elements</p>
+
+<form id="form1">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<button onclick="printData()">Print</button>
+  
+<p id="para"></p>
 
 <script>
+ 
+function printData(){
 
-</script>
+    var collectionData = document.forms["form1"];
+    var text = "";
+    var i;
+    for(i=0; i < collectionData.length ; i++){
+        text += collectionData.elements[i].value + "<br>";
+    }
 
+    document.getElementById('para').innerHTML = text;
+}
+
+
+ </script> 
+  
+  
+  
 </body>
 </html>
