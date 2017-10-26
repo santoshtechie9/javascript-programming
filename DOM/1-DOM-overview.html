@@ -30,12 +30,16 @@ properties - these are the values that can set for respective elements.
 <body>
 
     <h1> DOM - Object methods and properties</h1>
-
     <p id="p1">we will work with dom methods and properties</p>
+    <button id="button1" onclick="myFunction()">Click me</button>
 
-<script>
+  <script>
     document.getElementById("p1").innerHTML = "Hello World!";
-</script>
+
+    function myFunction(){
+        document.getElementById("button1").innerHTML = "I was clicked";
+    }
+  </script>
 
 </body>
 </html>
