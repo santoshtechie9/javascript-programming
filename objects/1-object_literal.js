@@ -1,9 +1,10 @@
 
 // in java script there are different ways to create an object
 // object literals
-// functional constructors
+// function constructors
 
-// object literal
+// here is the object literal method of creating objects
+
 var employee = {
     empName: "Sans",
     empId: 3456,
