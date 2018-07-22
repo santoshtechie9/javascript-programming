@@ -10,7 +10,7 @@ givenDate.setSeconds(3);
 
 console.log("givenDate = " + givenDate);
 console.log("currentDate = " + today);
-
+/*  */
 if( givenDate > today){
     console.log("given date is future date");
 }else{

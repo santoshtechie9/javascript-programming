@@ -1,7 +1,7 @@
 
 
 // In this module you will learn how to work with dates in java script.
-// you need to create a date object to work with dates in java script.
+// you need to create a date object to work with dates in javascript.
 
 // create a data object with current time.
 var date = new Date();
@@ -23,8 +23,4 @@ console.log("date_yyyymmdd = " + date_yyyymmdd);
 // years month day hours min sec format
 //var yearMonDayHourMinSec = new Date('2017,10,14,09,30');
 //console.log("yearMonDayHourMinSec = " + yearMonDayHourMinSec);
-
-
-
-
 
