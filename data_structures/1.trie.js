@@ -14,33 +14,25 @@ let Trie = function () {
     this.root = new Node();
 
     this.add = function (word) {
-
         let currentNode = this.root;
 
         if (word.length == 0) {
             currentNode.setEnd;
         }
-var i=0;
+
+        var i;
         for (i = 0; i < word.length; i++) {
-           // console.log("letter = " + word[i])
+            // console.log("letter = " + word[i])
             if (currentNode.keys.has(word[i])) {
                 //console.log("letter exists, " + word[i] + ", isEnd= " + currentNode.isEnd());
                 currentNode = currentNode.keys.get(word[i]);
-/*                 if (i + 1 == word.length) {
-                    currentNode.setEnd();
-                } */
             } else {
-
                 currentNode.keys.set(word[i], new Node());
                 currentNode = currentNode.keys.get(word[i]);
-/*                 if (i + 1 == word.length) {
-                    console.log(word[i]);
-                    currentNode.setEnd();
-                } */
             }
         }
         currentNode.setEnd();
-       // console.log(currentNode.keys.entries()+" = "+ currentNode.isEnd());
+        // console.log(currentNode.keys.entries()+" = "+ currentNode.isEnd());
     }
 
     this.print = function () {
@@ -70,5 +62,4 @@ trie.add("sandhu");
 trie.add("tejo");
 trie.add("perrier");
 
-//console.log(trie.root.keys.entries());
 console.log(trie.print());
