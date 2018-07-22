@@ -1,6 +1,9 @@
 
 // function constructor. In javascipt there is no concept of classes. A function can be used to create object with a new keyword. 
-//This way of creating objects is called functional constructor
+//This way of creating objects is called functional constructor. this is typically indicated by starting letter of the word a capital letter 
+//instead of using camel case for method names.  Example Employee(constructor method) instead of employee(regular method).
+// The this keyword points to different objects depending on the context. it can refer to a window(browser), global object(node js), current object(function), empty object(new function())
+
 
 function Employee(empName, empId,dept,salary){
     this.empName=empId;
